@@ -1,0 +1,1505 @@
+************* Module Tetris
+C: 12, 0: Final newline missing (missing-final-newline)
+C:  1, 0: Missing module docstring (missing-docstring)
+E:  5, 0: Module 'pygame' has no 'init' member (no-member)
+W:  6, 0: Wildcard import block (wildcard-import)
+C:  6, 0: Import "from block import *" should be placed at the top of the module (wrong-import-position)
+W:  7, 0: Wildcard import pieces (wildcard-import)
+C:  7, 0: Import "from pieces import *" should be placed at the top of the module (wrong-import-position)
+W:  8, 0: Wildcard import board (wildcard-import)
+C:  8, 0: Import "from board import *" should be placed at the top of the module (wrong-import-position)
+W:  9, 0: Wildcard import gameplay (wildcard-import)
+C:  9, 0: Import "from gameplay import *" should be placed at the top of the module (wrong-import-position)
+C: 11, 0: Invalid constant name "game" (invalid-name)
+W:  2, 0: Unused import random (unused-import)
+W:  3, 0: Unused import time (unused-import)
+W:  6, 0: Unused import colors from wildcard import (unused-wildcard-import)
+W:  6, 0: Unused import blue from wildcard import (unused-wildcard-import)
+W:  6, 0: Unused import clock from wildcard import (unused-wildcard-import)
+W:  6, 0: Unused import black from wildcard import (unused-wildcard-import)
+W:  6, 0: Unused import green from wildcard import (unused-wildcard-import)
+W:  6, 0: Unused import white from wildcard import (unused-wildcard-import)
+W:  6, 0: Unused import red from wildcard import (unused-wildcard-import)
+W:  6, 0: Unused import brown from wildcard import (unused-wildcard-import)
+W:  6, 0: Unused import screen from wildcard import (unused-wildcard-import)
+W:  6, 0: Unused import boardwidth from wildcard import (unused-wildcard-import)
+W:  6, 0: Unused import screenheight from wildcard import (unused-wildcard-import)
+W:  6, 0: Unused import board_x from wildcard import (unused-wildcard-import)
+W:  6, 0: Unused import board_y from wildcard import (unused-wildcard-import)
+W:  6, 0: Unused import headfont from wildcard import (unused-wildcard-import)
+W:  6, 0: Unused import Block from wildcard import (unused-wildcard-import)
+W:  6, 0: Unused import scorefont from wildcard import (unused-wildcard-import)
+W:  6, 0: Unused import boardheight from wildcard import (unused-wildcard-import)
+W:  6, 0: Unused import ul from wildcard import (unused-wildcard-import)
+W:  6, 0: Unused import screenwidth from wildcard import (unused-wildcard-import)
+W:  7, 0: Unused import SqPiece from wildcard import (unused-wildcard-import)
+W:  7, 0: Unused import LinePiece from wildcard import (unused-wildcard-import)
+W:  7, 0: Unused import JagPiece from wildcard import (unused-wildcard-import)
+W:  7, 0: Unused import KnightPiece from wildcard import (unused-wildcard-import)
+W:  8, 0: Unused import Board from wildcard import (unused-wildcard-import)
+C:  2, 0: standard import "import random" comes before "import pygame" (wrong-import-order)
+C:  3, 0: standard import "import time" comes before "import pygame" (wrong-import-order)
+************* Module block
+W: 25, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 26, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 27, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 28, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 29, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 30, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 31, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 32, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 33, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 34, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 35, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 36, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 37, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 37, 0: No space allowed after bracket
+			if (y >= boardheight) or (y < 0) or ( x < 0) or (x >= boardwidth) or (board[y][x] is not -1):
+                                       ^ (bad-whitespace)
+W: 38, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 39, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 40, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 41, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 42, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 43, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 44, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 45, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 46, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 47, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 48, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 49, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 50, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 51, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 52, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 53, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 54, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 55, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 56, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 57, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 58, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 59, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 60, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 61, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 62, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 63, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 64, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 65, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 66, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 67, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 68, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 69, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 70, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 71, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 72, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 73, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 74, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 75, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 76, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 77, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 78, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 79, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 80, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 81, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 82, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 83, 0: Final newline missing (missing-final-newline)
+W: 83, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:  1, 0: Missing module docstring (missing-docstring)
+C:  4, 0: Invalid constant name "white" (invalid-name)
+C:  5, 0: Invalid constant name "black" (invalid-name)
+C:  6, 0: Invalid constant name "red" (invalid-name)
+C:  7, 0: Invalid constant name "green" (invalid-name)
+C:  8, 0: Invalid constant name "blue" (invalid-name)
+C:  9, 0: Invalid constant name "brown" (invalid-name)
+C: 10, 0: Invalid constant name "colors" (invalid-name)
+C: 11, 0: Invalid constant name "ul" (invalid-name)
+C: 12, 0: Invalid constant name "screenwidth" (invalid-name)
+C: 13, 0: Invalid constant name "screenheight" (invalid-name)
+C: 14, 0: Invalid constant name "boardwidth" (invalid-name)
+C: 15, 0: Invalid constant name "boardheight" (invalid-name)
+C: 16, 0: Invalid constant name "board_x" (invalid-name)
+C: 17, 0: Invalid constant name "board_y" (invalid-name)
+C: 18, 0: Invalid constant name "clock" (invalid-name)
+C: 19, 0: Invalid constant name "headfont" (invalid-name)
+C: 20, 0: Invalid constant name "scorefont" (invalid-name)
+C: 21, 0: Invalid constant name "screen" (invalid-name)
+C: 24, 0: Missing class docstring (missing-docstring)
+C: 24, 0: Old-style class defined. (old-style-class)
+C: 27, 1: Missing method docstring (missing-docstring)
+C: 35, 3: Invalid variable name "x" (invalid-name)
+E: 35, 8: Instance of 'Block' has no 'pos' member (no-member)
+E: 35,22: Instance of 'Block' has no 'coords' member (no-member)
+C: 36, 3: Invalid variable name "y" (invalid-name)
+E: 36, 8: Instance of 'Block' has no 'pos' member (no-member)
+E: 36,22: Instance of 'Block' has no 'coords' member (no-member)
+C: 42, 1: Invalid method name "moveLeft" (invalid-name)
+C: 42, 1: Missing method docstring (missing-docstring)
+E: 43, 2: Instance of 'Block' has no 'pos' member (no-member)
+C: 46, 3: Invalid variable name "x" (invalid-name)
+E: 46, 8: Instance of 'Block' has no 'pos' member (no-member)
+E: 46,22: Instance of 'Block' has no 'coords' member (no-member)
+C: 47, 3: Invalid variable name "y" (invalid-name)
+E: 47, 8: Instance of 'Block' has no 'pos' member (no-member)
+E: 47,22: Instance of 'Block' has no 'coords' member (no-member)
+E: 50, 4: Instance of 'Block' has no 'pos' member (no-member)
+C: 53, 1: Invalid method name "moveRight" (invalid-name)
+C: 53, 1: Missing method docstring (missing-docstring)
+E: 54, 2: Instance of 'Block' has no 'pos' member (no-member)
+C: 57, 3: Invalid variable name "x" (invalid-name)
+E: 57, 8: Instance of 'Block' has no 'pos' member (no-member)
+E: 57,22: Instance of 'Block' has no 'coords' member (no-member)
+C: 58, 3: Invalid variable name "y" (invalid-name)
+E: 58, 8: Instance of 'Block' has no 'pos' member (no-member)
+E: 58,22: Instance of 'Block' has no 'coords' member (no-member)
+E: 61, 4: Instance of 'Block' has no 'pos' member (no-member)
+C: 64, 1: Invalid method name "moveDown" (invalid-name)
+C: 64, 1: Missing method docstring (missing-docstring)
+E: 65, 2: Instance of 'Block' has no 'pos' member (no-member)
+C: 68, 3: Invalid variable name "x" (invalid-name)
+E: 68, 8: Instance of 'Block' has no 'pos' member (no-member)
+E: 68,22: Instance of 'Block' has no 'coords' member (no-member)
+C: 69, 3: Invalid variable name "y" (invalid-name)
+E: 69, 8: Instance of 'Block' has no 'pos' member (no-member)
+E: 69,22: Instance of 'Block' has no 'coords' member (no-member)
+E: 72, 4: Instance of 'Block' has no 'pos' member (no-member)
+C: 75, 1: Missing method docstring (missing-docstring)
+C: 77, 3: Invalid variable name "x" (invalid-name)
+E: 77,18: Instance of 'Block' has no 'pos' member (no-member)
+E: 77,32: Instance of 'Block' has no 'coords' member (no-member)
+C: 78, 3: Invalid variable name "y" (invalid-name)
+E: 78,18: Instance of 'Block' has no 'pos' member (no-member)
+E: 78,32: Instance of 'Block' has no 'coords' member (no-member)
+E: 79,35: Instance of 'Block' has no 'ref' member (no-member)
+C: 81, 1: Missing method docstring (missing-docstring)
+W: 83, 3: Statement seems to have no effect (pointless-statement)
+E: 28,13: Access to member 'state' before its definition line 32 (access-member-before-definition)
+E: 29, 5: Access to member 'state' before its definition line 32 (access-member-before-definition)
+E: 30, 3: Access to member 'state' before its definition line 32 (access-member-before-definition)
+W: 32, 3: Attribute 'state' defined outside __init__ (attribute-defined-outside-init)
+W: 39, 4: Attribute 'state' defined outside __init__ (attribute-defined-outside-init)
+W:  2, 0: Unused import random (unused-import)
+W:  3, 0: Unused import time (unused-import)
+C:  2, 0: standard import "import random" comes before "import pygame" (wrong-import-order)
+C:  3, 0: standard import "import time" comes before "import pygame" (wrong-import-order)
+W: 25, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 26, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 27, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 28, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 29, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 30, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 31, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 32, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 33, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 34, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 35, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 36, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 37, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 37, 0: No space allowed after bracket
+			if (y >= boardheight) or (y < 0) or ( x < 0) or (x >= boardwidth) or (board[y][x] is not -1):
+                                       ^ (bad-whitespace)
+W: 38, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 39, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 40, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 41, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 42, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 43, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 44, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 45, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 46, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 47, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 48, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 49, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 50, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 51, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 52, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 53, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 54, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 55, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 56, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 57, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 58, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 59, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 60, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 61, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 62, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 63, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 64, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 65, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 66, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 67, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 68, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 69, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 70, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 71, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 72, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 73, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 74, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 75, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 76, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 77, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 78, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 79, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 80, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 81, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 82, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 83, 0: Final newline missing (missing-final-newline)
+W: 83, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:  1, 0: Missing module docstring (missing-docstring)
+C:  4, 0: Invalid constant name "white" (invalid-name)
+C:  5, 0: Invalid constant name "black" (invalid-name)
+C:  6, 0: Invalid constant name "red" (invalid-name)
+C:  7, 0: Invalid constant name "green" (invalid-name)
+C:  8, 0: Invalid constant name "blue" (invalid-name)
+C:  9, 0: Invalid constant name "brown" (invalid-name)
+C: 10, 0: Invalid constant name "colors" (invalid-name)
+C: 11, 0: Invalid constant name "ul" (invalid-name)
+C: 12, 0: Invalid constant name "screenwidth" (invalid-name)
+C: 13, 0: Invalid constant name "screenheight" (invalid-name)
+C: 14, 0: Invalid constant name "boardwidth" (invalid-name)
+C: 15, 0: Invalid constant name "boardheight" (invalid-name)
+C: 16, 0: Invalid constant name "board_x" (invalid-name)
+C: 17, 0: Invalid constant name "board_y" (invalid-name)
+C: 18, 0: Invalid constant name "clock" (invalid-name)
+C: 19, 0: Invalid constant name "headfont" (invalid-name)
+C: 20, 0: Invalid constant name "scorefont" (invalid-name)
+C: 21, 0: Invalid constant name "screen" (invalid-name)
+C: 24, 0: Missing class docstring (missing-docstring)
+C: 24, 0: Old-style class defined. (old-style-class)
+C: 27, 1: Missing method docstring (missing-docstring)
+C: 35, 3: Invalid variable name "x" (invalid-name)
+E: 35, 8: Instance of 'Block' has no 'pos' member (no-member)
+E: 35,22: Instance of 'Block' has no 'coords' member (no-member)
+C: 36, 3: Invalid variable name "y" (invalid-name)
+E: 36, 8: Instance of 'Block' has no 'pos' member (no-member)
+E: 36,22: Instance of 'Block' has no 'coords' member (no-member)
+C: 42, 1: Invalid method name "moveLeft" (invalid-name)
+C: 42, 1: Missing method docstring (missing-docstring)
+E: 43, 2: Instance of 'Block' has no 'pos' member (no-member)
+C: 46, 3: Invalid variable name "x" (invalid-name)
+E: 46, 8: Instance of 'Block' has no 'pos' member (no-member)
+E: 46,22: Instance of 'Block' has no 'coords' member (no-member)
+C: 47, 3: Invalid variable name "y" (invalid-name)
+E: 47, 8: Instance of 'Block' has no 'pos' member (no-member)
+E: 47,22: Instance of 'Block' has no 'coords' member (no-member)
+E: 50, 4: Instance of 'Block' has no 'pos' member (no-member)
+C: 53, 1: Invalid method name "moveRight" (invalid-name)
+C: 53, 1: Missing method docstring (missing-docstring)
+E: 54, 2: Instance of 'Block' has no 'pos' member (no-member)
+C: 57, 3: Invalid variable name "x" (invalid-name)
+E: 57, 8: Instance of 'Block' has no 'pos' member (no-member)
+E: 57,22: Instance of 'Block' has no 'coords' member (no-member)
+C: 58, 3: Invalid variable name "y" (invalid-name)
+E: 58, 8: Instance of 'Block' has no 'pos' member (no-member)
+E: 58,22: Instance of 'Block' has no 'coords' member (no-member)
+E: 61, 4: Instance of 'Block' has no 'pos' member (no-member)
+C: 64, 1: Invalid method name "moveDown" (invalid-name)
+C: 64, 1: Missing method docstring (missing-docstring)
+E: 65, 2: Instance of 'Block' has no 'pos' member (no-member)
+C: 68, 3: Invalid variable name "x" (invalid-name)
+E: 68, 8: Instance of 'Block' has no 'pos' member (no-member)
+E: 68,22: Instance of 'Block' has no 'coords' member (no-member)
+C: 69, 3: Invalid variable name "y" (invalid-name)
+E: 69, 8: Instance of 'Block' has no 'pos' member (no-member)
+E: 69,22: Instance of 'Block' has no 'coords' member (no-member)
+E: 72, 4: Instance of 'Block' has no 'pos' member (no-member)
+C: 75, 1: Missing method docstring (missing-docstring)
+C: 77, 3: Invalid variable name "x" (invalid-name)
+E: 77,18: Instance of 'Block' has no 'pos' member (no-member)
+E: 77,32: Instance of 'Block' has no 'coords' member (no-member)
+C: 78, 3: Invalid variable name "y" (invalid-name)
+E: 78,18: Instance of 'Block' has no 'pos' member (no-member)
+E: 78,32: Instance of 'Block' has no 'coords' member (no-member)
+E: 79,35: Instance of 'Block' has no 'ref' member (no-member)
+C: 81, 1: Missing method docstring (missing-docstring)
+W: 83, 3: Statement seems to have no effect (pointless-statement)
+E: 28,13: Access to member 'state' before its definition line 32 (access-member-before-definition)
+E: 29, 5: Access to member 'state' before its definition line 32 (access-member-before-definition)
+E: 30, 3: Access to member 'state' before its definition line 32 (access-member-before-definition)
+W: 32, 3: Attribute 'state' defined outside __init__ (attribute-defined-outside-init)
+W: 39, 4: Attribute 'state' defined outside __init__ (attribute-defined-outside-init)
+W:  2, 0: Unused import random (unused-import)
+W:  3, 0: Unused import time (unused-import)
+C:  2, 0: standard import "import random" comes before "import pygame" (wrong-import-order)
+C:  3, 0: standard import "import time" comes before "import pygame" (wrong-import-order)
+************* Module board
+W:  3, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  4, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  5, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  6, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  7, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:  7, 0: No space allowed before bracket
+		for i in xrange (boardheight):
+                  ^ (bad-whitespace)
+W:  8, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  9, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 10, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 11, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 12, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 13, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 15, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 16, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 17, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 18, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 19, 0: Line too long (101/100) (line-too-long)
+W: 19, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 20, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 21, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 22, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 24, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 25, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 26, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 26, 0: No space allowed before bracket
+		for i in xrange (boardheight):
+                  ^ (bad-whitespace)
+W: 27, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 28, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 29, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 30, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 31, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 32, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 33, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 34, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 35, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 36, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 37, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 38, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 39, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 40, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 41, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 42, 0: Trailing whitespace (trailing-whitespace)
+W: 42, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 43, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 44, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 45, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 46, 0: Final newline missing (missing-final-newline)
+W: 46, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:  1, 0: Missing module docstring (missing-docstring)
+W:  1, 0: Wildcard import block (wildcard-import)
+C:  2, 0: Missing class docstring (missing-docstring)
+C:  2, 0: Old-style class defined. (old-style-class)
+W:  4,53: Unused variable 'y' (unused-variable)
+W:  4,24: Unused variable 'x' (unused-variable)
+C:  6, 1: Invalid method name "fillPiecePos" (invalid-name)
+C:  6, 1: Missing method docstring (missing-docstring)
+C: 10, 5: Invalid variable name "x" (invalid-name)
+C: 11, 5: Invalid variable name "y" (invalid-name)
+C: 15, 1: Invalid method name "drawBoard" (invalid-name)
+C: 15, 1: Missing method docstring (missing-docstring)
+C: 24, 1: Invalid method name "checkRowFull" (invalid-name)
+C: 24, 1: Missing method docstring (missing-docstring)
+W: 40,56: Unused variable 'y' (unused-variable)
+W: 40,27: Unused variable 'x' (unused-variable)
+W:  1, 0: Unused import blue from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import brown from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import clock from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import random from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import screenheight from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import green from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import time from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import screenwidth from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import Block from wildcard import (unused-wildcard-import)
+W:  3, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  4, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  5, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  6, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  7, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:  7, 0: No space allowed before bracket
+		for i in xrange (boardheight):
+                  ^ (bad-whitespace)
+W:  8, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  9, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 10, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 11, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 12, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 13, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 15, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 16, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 17, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 18, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 19, 0: Line too long (101/100) (line-too-long)
+W: 19, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 20, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 21, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 22, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 24, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 25, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 26, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 26, 0: No space allowed before bracket
+		for i in xrange (boardheight):
+                  ^ (bad-whitespace)
+W: 27, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 28, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 29, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 30, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 31, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 32, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 33, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 34, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 35, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 36, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 37, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 38, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 39, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 40, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 41, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 42, 0: Trailing whitespace (trailing-whitespace)
+W: 42, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 43, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 44, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 45, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 46, 0: Final newline missing (missing-final-newline)
+W: 46, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:  1, 0: Missing module docstring (missing-docstring)
+W:  1, 0: Wildcard import block (wildcard-import)
+C:  2, 0: Missing class docstring (missing-docstring)
+C:  2, 0: Old-style class defined. (old-style-class)
+W:  4,53: Unused variable 'y' (unused-variable)
+W:  4,24: Unused variable 'x' (unused-variable)
+C:  6, 1: Invalid method name "fillPiecePos" (invalid-name)
+C:  6, 1: Missing method docstring (missing-docstring)
+C: 10, 5: Invalid variable name "x" (invalid-name)
+C: 11, 5: Invalid variable name "y" (invalid-name)
+C: 15, 1: Invalid method name "drawBoard" (invalid-name)
+C: 15, 1: Missing method docstring (missing-docstring)
+C: 24, 1: Invalid method name "checkRowFull" (invalid-name)
+C: 24, 1: Missing method docstring (missing-docstring)
+W: 40,56: Unused variable 'y' (unused-variable)
+W: 40,27: Unused variable 'x' (unused-variable)
+R: 24, 1: Too many branches (16/12) (too-many-branches)
+W:  1, 0: Unused import blue from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import brown from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import clock from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import random from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import screenheight from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import green from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import time from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import screenwidth from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import Block from wildcard import (unused-wildcard-import)
+************* Module gameplay
+W:  4, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  5, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  6, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  7, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  8, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  9, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 10, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 11, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 12, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 13, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 14, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 15, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 16, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 17, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 18, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 19, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 20, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 21, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 22, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 23, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 24, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 25, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 26, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 27, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 28, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 29, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 30, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 31, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 34, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 35, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 36, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 37, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 38, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 39, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 40, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 41, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 42, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 43, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 44, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 45, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 46, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 47, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 48, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 49, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 50, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 51, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 52, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 53, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 54, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 55, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 56, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 57, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 58, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 59, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 60, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 61, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 62, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 63, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 64, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 65, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 66, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 67, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 68, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 69, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 70, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 71, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 72, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 73, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 74, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 75, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 76, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 78, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 79, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 81, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 82, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 83, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 84, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 85, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 86, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 87, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 88, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 89, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 91, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 92, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 93, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 94, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 95, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 96, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 96, 0: Unnecessary semicolon (unnecessary-semicolon)
+W: 97, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 98, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 99, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:100, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:101, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:102, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:103, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:104, 0: Trailing whitespace (trailing-whitespace)
+W:105, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:106, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:107, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:108, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:109, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:110, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:111, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:112, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:113, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:114, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:115, 0: Final newline missing (missing-final-newline)
+W:115, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:  1, 0: Missing module docstring (missing-docstring)
+W:  1, 0: Wildcard import board (wildcard-import)
+W:  2, 0: Wildcard import pieces (wildcard-import)
+C:  6, 2: Invalid attribute name "gameExit" (invalid-name)
+C:  3, 0: Missing class docstring (missing-docstring)
+C:  3, 0: Old-style class defined. (old-style-class)
+C: 10, 1: Invalid method name "initGame" (invalid-name)
+C: 10, 1: Missing method docstring (missing-docstring)
+E: 22,21: Module 'pygame' has no 'KEYDOWN' member (no-member)
+E: 23,21: Module 'pygame' has no 'K_RETURN' member (no-member)
+E: 26,21: Module 'pygame' has no 'QUIT' member (no-member)
+E: 27, 5: Module 'pygame' has no 'quit' member (no-member)
+C: 34, 1: Invalid method name "startGame" (invalid-name)
+C: 34, 1: Missing method docstring (missing-docstring)
+E: 41,21: Module 'pygame' has no 'KEYDOWN' member (no-member)
+E: 42,21: Module 'pygame' has no 'K_a' member (no-member)
+E: 46,23: Module 'pygame' has no 'K_d' member (no-member)
+E: 50,23: Module 'pygame' has no 'K_w' member (no-member)
+E: 54,23: Module 'pygame' has no 'K_SPACE' member (no-member)
+C: 61, 7: Invalid variable name "x" (invalid-name)
+C: 62, 7: Invalid variable name "y" (invalid-name)
+E: 75,21: Module 'pygame' has no 'QUIT' member (no-member)
+E: 88, 2: Module 'pygame' has no 'quit' member (no-member)
+R: 34, 1: Too many branches (14/12) (too-many-branches)
+R: 34, 1: Too many statements (51/50) (too-many-statements)
+C: 91, 1: Invalid method name "updateScore" (invalid-name)
+C: 91, 1: Missing method docstring (missing-docstring)
+C: 95, 1: Invalid method name "gameOver" (invalid-name)
+C: 95, 1: Missing method docstring (missing-docstring)
+R:100, 2: The if statement can be replaced with 'return bool(test)' (simplifiable-if-statement)
+C:105, 1: Invalid method name "selectPiece" (invalid-name)
+C:105, 1: Missing method docstring (missing-docstring)
+C:106, 2: Invalid variable name "x" (invalid-name)
+C:107, 2: Invalid variable name "x" (invalid-name)
+R:105, 1: Method could be a function (no-self-use)
+W:  1, 0: Unused import brown from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import ul from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import board_x from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import boardheight from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import screenheight from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import colors from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import board_y from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import green from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import screenwidth from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import Block from wildcard import (unused-wildcard-import)
+W:  4, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  5, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  6, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  7, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  8, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  9, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 10, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 11, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 12, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 13, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 14, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 15, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 16, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 17, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 18, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 19, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 20, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 21, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 22, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 23, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 24, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 25, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 26, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 27, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 28, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 29, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 30, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 31, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 34, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 35, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 36, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 37, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 38, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 39, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 40, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 41, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 42, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 43, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 44, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 45, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 46, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 47, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 48, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 49, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 50, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 51, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 52, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 53, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 54, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 55, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 56, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 57, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 58, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 59, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 60, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 61, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 62, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 63, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 64, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 65, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 66, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 67, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 68, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 69, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 70, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 71, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 72, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 73, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 74, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 75, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 76, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 78, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 79, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 81, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 82, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 83, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 84, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 85, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 86, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 87, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 88, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 89, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 91, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 92, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 93, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 94, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 95, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 96, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 96, 0: Unnecessary semicolon (unnecessary-semicolon)
+W: 97, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 98, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 99, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:100, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:101, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:102, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:103, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:104, 0: Trailing whitespace (trailing-whitespace)
+W:105, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:106, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:107, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:108, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:109, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:110, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:111, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:112, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:113, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:114, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:115, 0: Final newline missing (missing-final-newline)
+W:115, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:  1, 0: Missing module docstring (missing-docstring)
+W:  1, 0: Wildcard import board (wildcard-import)
+W:  2, 0: Wildcard import pieces (wildcard-import)
+C:  6, 2: Invalid attribute name "gameExit" (invalid-name)
+C:  3, 0: Missing class docstring (missing-docstring)
+C:  3, 0: Old-style class defined. (old-style-class)
+C: 10, 1: Invalid method name "initGame" (invalid-name)
+C: 10, 1: Missing method docstring (missing-docstring)
+E: 22,21: Module 'pygame' has no 'KEYDOWN' member (no-member)
+E: 23,21: Module 'pygame' has no 'K_RETURN' member (no-member)
+E: 26,21: Module 'pygame' has no 'QUIT' member (no-member)
+E: 27, 5: Module 'pygame' has no 'quit' member (no-member)
+C: 34, 1: Invalid method name "startGame" (invalid-name)
+C: 34, 1: Missing method docstring (missing-docstring)
+E: 41,21: Module 'pygame' has no 'KEYDOWN' member (no-member)
+E: 42,21: Module 'pygame' has no 'K_a' member (no-member)
+E: 46,23: Module 'pygame' has no 'K_d' member (no-member)
+E: 50,23: Module 'pygame' has no 'K_w' member (no-member)
+E: 54,23: Module 'pygame' has no 'K_SPACE' member (no-member)
+C: 61, 7: Invalid variable name "x" (invalid-name)
+C: 62, 7: Invalid variable name "y" (invalid-name)
+E: 75,21: Module 'pygame' has no 'QUIT' member (no-member)
+E: 88, 2: Module 'pygame' has no 'quit' member (no-member)
+R: 34, 1: Too many branches (28/12) (too-many-branches)
+R: 34, 1: Too many statements (51/50) (too-many-statements)
+C: 91, 1: Invalid method name "updateScore" (invalid-name)
+C: 91, 1: Missing method docstring (missing-docstring)
+C: 95, 1: Invalid method name "gameOver" (invalid-name)
+C: 95, 1: Missing method docstring (missing-docstring)
+R:100, 2: The if statement can be replaced with 'return bool(test)' (simplifiable-if-statement)
+C:105, 1: Invalid method name "selectPiece" (invalid-name)
+C:105, 1: Missing method docstring (missing-docstring)
+C:106, 2: Invalid variable name "x" (invalid-name)
+C:107, 2: Invalid variable name "x" (invalid-name)
+R:105, 1: Method could be a function (no-self-use)
+W:  1, 0: Unused import brown from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import ul from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import board_x from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import boardheight from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import screenheight from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import colors from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import board_y from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import green from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import screenwidth from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import Block from wildcard import (unused-wildcard-import)
+************* Module pieces
+W:  3, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  4, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  5, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  6, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  7, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:  8, 0: Wrong hanging indentation (add 18 spaces).
+		[[-1, -1], [0, -1], [0, 0], [-1, 0]],
+  ^                 | (bad-continuation)
+C:  9, 0: Wrong hanging indentation (add 18 spaces).
+		[[-1, -1], [0, -1], [0, 0], [-1, 0]],
+  ^                 | (bad-continuation)
+C: 10, 0: Wrong hanging indentation (add 18 spaces).
+		[[-1, -1], [0, -1], [0, 0], [-1, 0]],
+  ^                 | (bad-continuation)
+C: 11, 0: Wrong hanging indentation (add 12 spaces).
+        [[-1, -1], [0, -1], [0, 0], [-1, 0]]
+        ^           | (bad-continuation)
+C: 12, 0: Wrong hanging indentation.
+		]
+  ^             |   | (bad-continuation)
+W: 14, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 15, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 16, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 17, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 17, 0: No space allowed after bracket
+		self.pos = [ boardwidth / 2,  1]
+             ^ (bad-whitespace)
+C: 17, 0: Exactly one space required after comma
+		self.pos = [ boardwidth / 2,  1]
+                             ^ (bad-whitespace)
+W: 18, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 19, 0: Wrong hanging indentation (add 18 spaces).
+		[[-2, -1], [-1, -1], [0, -1], [1, -1]],
+  ^                 | (bad-continuation)
+C: 20, 0: Wrong hanging indentation (add 18 spaces).
+		[[0, -2], [0, -1], [0, 0], [0, 1]],
+  ^                 | (bad-continuation)
+C: 21, 0: Wrong hanging indentation (add 18 spaces).
+		[[-2, 0], [-1, 0], [0, 0], [1, 0]],
+  ^                 | (bad-continuation)
+C: 22, 0: Wrong hanging indentation (add 18 spaces).
+		[[-1, -2], [-1, -1], [-1, 0], [-1, 1]]
+  ^                 | (bad-continuation)
+C: 23, 0: Wrong hanging indentation.
+		]
+  ^             |   | (bad-continuation)
+W: 25, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 26, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 27, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 28, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 28, 0: No space allowed after bracket
+		self.pos = [ boardwidth / 2,  1]
+             ^ (bad-whitespace)
+C: 28, 0: Exactly one space required after comma
+		self.pos = [ boardwidth / 2,  1]
+                             ^ (bad-whitespace)
+W: 29, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 30, 0: Wrong hanging indentation (add 18 spaces).
+		[[-2, -1], [-1, -1], [0, -1], [0, 0]],
+  ^                 | (bad-continuation)
+C: 31, 0: Wrong hanging indentation (add 18 spaces).
+		[[0, -2], [0, -1], [0, 0], [-1, 0]],
+  ^                 | (bad-continuation)
+C: 32, 0: Wrong hanging indentation (add 18 spaces).
+		[[-1, -1], [-1, 0], [0, 0], [1, 0]],
+  ^                 | (bad-continuation)
+C: 33, 0: Wrong hanging indentation (add 18 spaces).
+		[[-1, -1], [0, -1], [-1, 0], [-1, 1]]
+  ^                 | (bad-continuation)
+C: 34, 0: Wrong hanging indentation.
+		]
+  ^             |   | (bad-continuation)
+W: 36, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 37, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 38, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 39, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 39, 0: No space allowed after bracket
+		self.pos = [ boardwidth / 2,  1]
+             ^ (bad-whitespace)
+C: 39, 0: Exactly one space required after comma
+		self.pos = [ boardwidth / 2,  1]
+                             ^ (bad-whitespace)
+W: 40, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 41, 0: Wrong hanging indentation (add 18 spaces).
+		[[-1, -1], [0, -1], [0, 0], [1, 0]],
+  ^                 | (bad-continuation)
+C: 42, 0: Wrong hanging indentation (add 18 spaces).
+		[[0, -1], [-1, 0], [0, 0], [-1, 1]],
+  ^                 | (bad-continuation)
+C: 43, 0: Wrong hanging indentation (add 18 spaces).
+		[[-2, -1], [-1, -1], [-1, 0], [0, 0]],
+  ^                 | (bad-continuation)
+C: 44, 0: Wrong hanging indentation (add 18 spaces).
+		[[0, -2], [0, -1], [-1, -1], [-1, 0]]
+  ^                 | (bad-continuation)
+C: 45, 0: Wrong hanging indentation.
+		]
+  ^             |   | (bad-continuation)
+C:  1, 0: Missing module docstring (missing-docstring)
+W:  1, 0: Wildcard import block (wildcard-import)
+C:  2, 0: Missing class docstring (missing-docstring)
+W:  3, 1: __init__ method from base class 'Block' is not called (super-init-not-called)
+C: 13, 0: Missing class docstring (missing-docstring)
+W: 14, 1: __init__ method from base class 'Block' is not called (super-init-not-called)
+C: 24, 0: Missing class docstring (missing-docstring)
+W: 25, 1: __init__ method from base class 'Block' is not called (super-init-not-called)
+C: 35, 0: Missing class docstring (missing-docstring)
+W: 36, 1: __init__ method from base class 'Block' is not called (super-init-not-called)
+W:  1, 0: Unused import blue from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import brown from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import green from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import clock from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import scorefont from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import screen from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import random from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import board_x from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import boardheight from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import screenheight from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import colors from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import board_y from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import black from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import pygame from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import time from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import headfont from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import white from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import screenwidth from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import red from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import ul from wildcard import (unused-wildcard-import)
+W:  3, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  4, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  5, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  6, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W:  7, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C:  8, 0: Wrong hanging indentation (add 18 spaces).
+		[[-1, -1], [0, -1], [0, 0], [-1, 0]],
+  ^                 | (bad-continuation)
+C:  9, 0: Wrong hanging indentation (add 18 spaces).
+		[[-1, -1], [0, -1], [0, 0], [-1, 0]],
+  ^                 | (bad-continuation)
+C: 10, 0: Wrong hanging indentation (add 18 spaces).
+		[[-1, -1], [0, -1], [0, 0], [-1, 0]],
+  ^                 | (bad-continuation)
+C: 11, 0: Wrong hanging indentation (add 12 spaces).
+        [[-1, -1], [0, -1], [0, 0], [-1, 0]]
+        ^           | (bad-continuation)
+C: 12, 0: Wrong hanging indentation.
+		]
+  ^             |   | (bad-continuation)
+W: 14, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 15, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 16, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 17, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 17, 0: No space allowed after bracket
+		self.pos = [ boardwidth / 2,  1]
+             ^ (bad-whitespace)
+C: 17, 0: Exactly one space required after comma
+		self.pos = [ boardwidth / 2,  1]
+                             ^ (bad-whitespace)
+W: 18, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 19, 0: Wrong hanging indentation (add 18 spaces).
+		[[-2, -1], [-1, -1], [0, -1], [1, -1]],
+  ^                 | (bad-continuation)
+C: 20, 0: Wrong hanging indentation (add 18 spaces).
+		[[0, -2], [0, -1], [0, 0], [0, 1]],
+  ^                 | (bad-continuation)
+C: 21, 0: Wrong hanging indentation (add 18 spaces).
+		[[-2, 0], [-1, 0], [0, 0], [1, 0]],
+  ^                 | (bad-continuation)
+C: 22, 0: Wrong hanging indentation (add 18 spaces).
+		[[-1, -2], [-1, -1], [-1, 0], [-1, 1]]
+  ^                 | (bad-continuation)
+C: 23, 0: Wrong hanging indentation.
+		]
+  ^             |   | (bad-continuation)
+W: 25, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 26, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 27, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 28, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 28, 0: No space allowed after bracket
+		self.pos = [ boardwidth / 2,  1]
+             ^ (bad-whitespace)
+C: 28, 0: Exactly one space required after comma
+		self.pos = [ boardwidth / 2,  1]
+                             ^ (bad-whitespace)
+W: 29, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 30, 0: Wrong hanging indentation (add 18 spaces).
+		[[-2, -1], [-1, -1], [0, -1], [0, 0]],
+  ^                 | (bad-continuation)
+C: 31, 0: Wrong hanging indentation (add 18 spaces).
+		[[0, -2], [0, -1], [0, 0], [-1, 0]],
+  ^                 | (bad-continuation)
+C: 32, 0: Wrong hanging indentation (add 18 spaces).
+		[[-1, -1], [-1, 0], [0, 0], [1, 0]],
+  ^                 | (bad-continuation)
+C: 33, 0: Wrong hanging indentation (add 18 spaces).
+		[[-1, -1], [0, -1], [-1, 0], [-1, 1]]
+  ^                 | (bad-continuation)
+C: 34, 0: Wrong hanging indentation.
+		]
+  ^             |   | (bad-continuation)
+W: 36, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 37, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 38, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+W: 39, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 39, 0: No space allowed after bracket
+		self.pos = [ boardwidth / 2,  1]
+             ^ (bad-whitespace)
+C: 39, 0: Exactly one space required after comma
+		self.pos = [ boardwidth / 2,  1]
+                             ^ (bad-whitespace)
+W: 40, 0: Found indentation with tabs instead of spaces (mixed-indentation)
+C: 41, 0: Wrong hanging indentation (add 18 spaces).
+		[[-1, -1], [0, -1], [0, 0], [1, 0]],
+  ^                 | (bad-continuation)
+C: 42, 0: Wrong hanging indentation (add 18 spaces).
+		[[0, -1], [-1, 0], [0, 0], [-1, 1]],
+  ^                 | (bad-continuation)
+C: 43, 0: Wrong hanging indentation (add 18 spaces).
+		[[-2, -1], [-1, -1], [-1, 0], [0, 0]],
+  ^                 | (bad-continuation)
+C: 44, 0: Wrong hanging indentation (add 18 spaces).
+		[[0, -2], [0, -1], [-1, -1], [-1, 0]]
+  ^                 | (bad-continuation)
+C: 45, 0: Wrong hanging indentation.
+		]
+  ^             |   | (bad-continuation)
+C:  1, 0: Missing module docstring (missing-docstring)
+W:  1, 0: Wildcard import block (wildcard-import)
+C:  2, 0: Missing class docstring (missing-docstring)
+W:  3, 1: __init__ method from base class 'Block' is not called (super-init-not-called)
+C: 13, 0: Missing class docstring (missing-docstring)
+W: 14, 1: __init__ method from base class 'Block' is not called (super-init-not-called)
+C: 24, 0: Missing class docstring (missing-docstring)
+W: 25, 1: __init__ method from base class 'Block' is not called (super-init-not-called)
+C: 35, 0: Missing class docstring (missing-docstring)
+W: 36, 1: __init__ method from base class 'Block' is not called (super-init-not-called)
+W:  1, 0: Unused import blue from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import brown from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import green from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import clock from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import scorefont from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import screen from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import random from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import board_x from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import boardheight from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import screenheight from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import colors from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import board_y from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import black from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import pygame from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import time from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import headfont from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import white from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import screenwidth from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import red from wildcard import (unused-wildcard-import)
+W:  1, 0: Unused import ul from wildcard import (unused-wildcard-import)
+R:  1, 0: Similar lines in 2 files
+==gameplay:0
+==gameplay:0
+from board import *
+from pieces import *
+class Gameplay:
+	def __init__(self):
+		self.gameboard = Board()
+		self.gameExit = False
+		self.pieceactive = False
+		self.activepiece = None
+		self.score = 0
+	def initGame(self):
+		screen.fill(white)
+		heading = headfont.render("Tetris", True, red)
+		screen.blit(heading, [260, 150])
+		tip = scorefont.render("Bonus : Achieve a row of a single color to clear the board!", True, blue)
+		screen.blit(tip, [20, 200])
+		cont = scorefont.render("Press ENTER to start game", True, black)
+		screen.blit(cont, [200, 250])
+		pygame.display.update()
+		flag = 0
+		while True:
+			for event in pygame.event.get():
+				if event.type == pygame.KEYDOWN:
+					if event.key == pygame.K_RETURN:
+						flag = 1
+						break
+				if event.type == pygame.QUIT:
+					pygame.quit()
+					quit()
+			if flag == 1:
+				break
+		self.startGame()
+
+
+	def startGame(self):
+		while self.gameExit is False:
+			if self.pieceactive is False:
+				self.activepiece = self.selectPiece()
+				pygame.time.set_timer(25, 500)
+				self.pieceactive = True
+			for event in pygame.event.get():
+				if event.type == pygame.KEYDOWN:
+					if event.key == pygame.K_a:
+						self.activepiece.moveLeft(self.gameboard.board)
+						self.gameboard.drawBoard()
+						self.activepiece.draw()
+					elif event.key == pygame.K_d:
+						self.activepiece.moveRight(self.gameboard.board)
+						self.gameboard.drawBoard()
+						self.activepiece.draw()
+					elif event.key == pygame.K_w:
+						self.activepiece.rotate(self.gameboard.board)
+						self.gameboard.drawBoard()
+						self.activepiece.draw()
+					elif event.key == pygame.K_SPACE:
+						self.activepiece.drop(self.gameboard.board)
+						self.gameboard.drawBoard()
+						self.activepiece.draw()
+				if event.type == 25:
+					if self.activepiece.moveDown(self.gameboard.board) is False:
+						for i in xrange(4):
+							x = (self.activepiece.pos[0] + self.activepiece.coords[self.activepiece.state][i][0])
+							y = (self.activepiece.pos[1] + self.activepiece.coords[self.activepiece.state][i][1])
+							self.gameboard.board[y][x] = self.activepiece.ref
+						if self.gameOver() is True:
+							self.gameExit = True
+						delrows = self.gameboard.checkRowFull()[0]
+						homecount = self.gameboard.checkRowFull()[1]
+						self.updateScore(delrows, homecount)
+						self.gameboard.score = self.score
+						self.gameboard.drawBoard()
+						self.pieceactive = False
+					else:
+						self.gameboard.drawBoard()
+						self.activepiece.draw()
+				if event.type == pygame.QUIT:
+					self.gameExit = True
+
+			pygame.display.update()
+			clock.tick(30)
+
+		screen.fill(white)
+		gameover = headfont.render("Game Over!", True, red)
+		screen.blit(gameover, [220, 150])
+		scordisp = scorefont.render("Your score was " + str(self.score), True, black)
+		screen.blit(scordisp, [210, 200])
+		pygame.display.update()
+		time.sleep(3)
+		pygame.quit()
+		quit()
+
+	def updateScore(self, delrows, homrows):
+		self.score = self.score + 10 + delrows * 100
+		if homrows is True:
+			self.score += 500
+	def gameOver(self):
+		count = 0;
+		for i in xrange(boardwidth):
+			if self.gameboard.board[1][i] != -1:
+				count += 1
+		if count > 0:
+			return True
+		else:
+			return False
+
+	def selectPiece(self):
+		x = random.random()
+		x = x * 4
+		if x >= 0 and x < 1:
+			return SqPiece()
+		if x >= 1 and x < 2:
+			return LinePiece()
+		if x >= 2 and x < 3:
+			return KnightPiece()
+		if x >= 3 and x <= 4:
+			return JagPiece() (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==block:0
+==block:0
+import pygame
+import random
+import time
+white = (255, 255, 255)
+black = (0, 0, 0)
+red = (255, 0, 0)
+green = (0, 255, 0)
+blue = (0, 0, 255)
+brown = (255, 255, 0)
+colors = [red, green, blue, brown]
+ul = 20
+screenwidth = 30
+screenheight = 35
+boardwidth = 20
+boardheight = 25
+board_x = 5
+board_y = 5
+clock = pygame.time.Clock()
+headfont = pygame.font.SysFont(None, 40)
+scorefont = pygame.font.SysFont(None, 30)
+screen = pygame.display.set_mode((screenwidth * ul, screenheight * ul))
+pygame.display.set_caption('Tetris')
+pygame.display.update()
+class Block():
+	def __init__(self):
+		pass
+	def rotate(self, board):
+		oldstate = self.state
+		if self.state != 3:
+			self.state += 1
+		else:
+			self.state = 0
+		valid = True
+		for i in xrange(4):
+			x = (self.pos[0] + self.coords[self.state][i][0])
+			y = (self.pos[1] + self.coords[self.state][i][1])
+			if (y >= boardheight) or (y < 0) or ( x < 0) or (x >= boardwidth) or (board[y][x] is not -1):
+				valid = False
+				self.state = oldstate
+				break
+		return valid
+	def moveLeft(self, board):
+		self.pos[0] -= 1
+		valid = True
+		for i in xrange(4):
+			x = (self.pos[0] + self.coords[self.state][i][0])
+			y = (self.pos[1] + self.coords[self.state][i][1])
+			if (x < 0) or (board[y][x] is not -1):
+				valid = False
+				self.pos[0] += 1
+				break
+		return valid
+	def moveRight(self, board):
+		self.pos[0] += 1
+		valid = True
+		for i in xrange(4):
+			x = (self.pos[0] + self.coords[self.state][i][0])
+			y = (self.pos[1] + self.coords[self.state][i][1])
+			if (x >= boardwidth) or (board[y][x] is not -1):
+				valid = False
+				self.pos[0] -= 1
+				break
+		return valid
+	def moveDown(self, board):
+		self.pos[1] += 1
+		valid = True
+		for i in xrange(4):
+			x = (self.pos[0] + self.coords[self.state][i][0])
+			y = (self.pos[1] + self.coords[self.state][i][1])
+			if (y >= boardheight) or (board[y][x] is not -1):
+				valid = False
+				self.pos[1] -= 1
+				break
+		return valid
+	def draw(self):
+		for i in xrange(4):
+			x = (board_x + self.pos[0] + self.coords[self.state][i][0]) * ul
+			y = (board_y + self.pos[1] + self.coords[self.state][i][1]) * ul
+			pygame.draw.rect(screen, colors[self.ref], [x, y, ul, ul])
+			pygame.draw.rect(screen, black, [x, y, ul, ul], 1)
+	def drop(self, board):
+		while self.moveDown(board) is True:
+			True (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==board:0
+==board:0
+from block import *
+class Board():
+	def __init__(self):
+		self.board = [[-1 for x in xrange(boardwidth)] for y in xrange(boardheight)]
+		self.score = 0
+	def fillPiecePos(self):
+		for i in xrange (boardheight):
+			for j in xrange(boardwidth):
+				if self.board[i][j] != -1:
+					x = (board_x + j) * ul
+					y = (board_y + i) * ul
+					pygame.draw.rect(screen, colors[self.board[i][j]], [x, y, ul, ul])
+					pygame.draw.rect(screen, black, [x, y, ul, ul], 1)
+
+	def drawBoard(self):
+		screen.fill(white)
+		heading = headfont.render("Tetris", True, red)
+		screen.blit(heading, [260, 30])
+		pygame.draw.rect(screen, black, [board_x * ul, board_y * ul, boardwidth * ul, boardheight * ul], 1)
+		scordisp = scorefont.render("Score : " + str(self.score), True, black)
+		screen.blit(scordisp, [270, 630])
+		self.fillPiecePos()
+
+	def checkRowFull(self):
+		delcount = 0
+		for i in xrange (boardheight):
+			count = 0
+			homcount = True
+			color = None
+			for j in xrange(boardwidth):
+				if self.board[i][j] is -1:
+					count += 1
+				if j == 0:
+					color = self.board[i][j]
+				else:
+					if self.board[i][j] != color:
+						homcount = False
+			if count == 0:
+				if homcount is True:
+					self.board = [[-1 for x in xrange(boardwidth)] for y in xrange(boardheight)]
+					break
+				else:
+					delcount += 1
+					del self.board[i]
+					self.board.insert(0, [-1 for x in xrange(boardwidth)])
+		return [delcount, homcount] (duplicate-code)
+R:  1, 0: Similar lines in 2 files
+==pieces:0
+==pieces:0
+from block import *
+class SqPiece(Block):
+	def __init__(self):
+		self.ref = 0
+		self.state = 0
+		self.pos = [boardwidth / 2, 1]
+		self.coords = [
+		[[-1, -1], [0, -1], [0, 0], [-1, 0]],
+		[[-1, -1], [0, -1], [0, 0], [-1, 0]],
+		[[-1, -1], [0, -1], [0, 0], [-1, 0]],
+        [[-1, -1], [0, -1], [0, 0], [-1, 0]]
+		]
+class LinePiece(Block):
+	def __init__(self):
+		self.ref = 1
+		self.state = 0
+		self.pos = [ boardwidth / 2,  1]
+		self.coords = [
+		[[-2, -1], [-1, -1], [0, -1], [1, -1]],
+		[[0, -2], [0, -1], [0, 0], [0, 1]],
+		[[-2, 0], [-1, 0], [0, 0], [1, 0]],
+		[[-1, -2], [-1, -1], [-1, 0], [-1, 1]]
+		]
+class KnightPiece(Block):
+	def __init__(self):
+		self.ref = 2
+		self.state = 0
+		self.pos = [ boardwidth / 2,  1]
+		self.coords = [
+		[[-2, -1], [-1, -1], [0, -1], [0, 0]],
+		[[0, -2], [0, -1], [0, 0], [-1, 0]],
+		[[-1, -1], [-1, 0], [0, 0], [1, 0]],
+		[[-1, -1], [0, -1], [-1, 0], [-1, 1]]
+		]
+class JagPiece(Block):
+	def __init__(self):
+		self.state = 0
+		self.ref = 3
+		self.pos = [ boardwidth / 2,  1]
+		self.coords = [
+		[[-1, -1], [0, -1], [0, 0], [1, 0]],
+		[[0, -1], [-1, 0], [0, 0], [-1, 1]],
+		[[-2, -1], [-1, -1], [-1, 0], [0, 0]],
+		[[0, -2], [0, -1], [-1, -1], [-1, 0]]
+		] (duplicate-code)
+
+
+Report
+======
+522 statements analysed.
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |9      |9          |=          |0.00        |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |14     |14         |=          |0.00        |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|method   |42     |42         |=          |33.33       |52.38    |
++---------+-------+-----------+-----------+------------+---------+
+|function |0      |0          |=          |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+External dependencies
+---------------------
+::
+
+    pygame (Tetris,block)
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |580    |96.83 |580      |=          |
++----------+-------+------+---------+-----------+
+|docstring |0      |0.00  |0        |=          |
++----------+-------+------+---------+-----------+
+|comment   |0      |0.00  |0        |=          |
++----------+-------+------+---------+-----------+
+|empty     |19     |3.17  |19       |=          |
++----------+-------+------+---------+-----------+
+
+
+
+Duplication
+-----------
+
++-------------------------+-------+---------+-----------+
+|                         |now    |previous |difference |
++=========================+=======+=========+===========+
+|nb duplicated lines      |289    |289      |=          |
++-------------------------+-------+---------+-----------+
+|percent duplicated lines |48.983 |48.983   |=          |
++-------------------------+-------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |231    |231      |=          |
++-----------+-------+---------+-----------+
+|refactor   |13     |13       |=          |
++-----------+-------+---------+-----------+
+|warning    |598    |598      |=          |
++-----------+-------+---------+-----------+
+|error      |83     |83       |=          |
++-----------+-------+---------+-----------+
+
+
+
+% errors / warnings by module
+-----------------------------
+
++---------+------+--------+---------+-----------+
+|module   |error |warning |refactor |convention |
++=========+======+========+=========+===========+
+|block    |36.14 |10.70   |0.00     |19.05      |
++---------+------+--------+---------+-----------+
+|gameplay |13.25 |19.90   |30.77    |8.66       |
++---------+------+--------+---------+-----------+
+|Tetris   |1.20  |5.02    |0.00     |3.90       |
++---------+------+--------+---------+-----------+
+|board    |0.00  |9.36    |7.69     |6.93       |
++---------+------+--------+---------+-----------+
+|pieces   |0.00  |7.53    |30.77    |13.42      |
++---------+------+--------+---------+-----------+
+
+
+
+Messages
+--------
+
++--------------------------------+------------+
+|message id                      |occurrences |
++================================+============+
+|mixed-indentation               |454         |
++--------------------------------+------------+
+|unused-wildcard-import          |102         |
++--------------------------------+------------+
+|invalid-name                    |93          |
++--------------------------------+------------+
+|no-member                       |77          |
++--------------------------------+------------+
+|missing-docstring               |51          |
++--------------------------------+------------+
+|bad-continuation                |40          |
++--------------------------------+------------+
+|bad-whitespace                  |18          |
++--------------------------------+------------+
+|wildcard-import                 |12          |
++--------------------------------+------------+
+|unused-variable                 |8           |
++--------------------------------+------------+
+|super-init-not-called           |8           |
++--------------------------------+------------+
+|missing-final-newline           |7           |
++--------------------------------+------------+
+|wrong-import-order              |6           |
++--------------------------------+------------+
+|unused-import                   |6           |
++--------------------------------+------------+
+|old-style-class                 |6           |
++--------------------------------+------------+
+|access-member-before-definition |6           |
++--------------------------------+------------+
+|wrong-import-position           |4           |
++--------------------------------+------------+
+|trailing-whitespace             |4           |
++--------------------------------+------------+
+|duplicate-code                  |4           |
++--------------------------------+------------+
+|attribute-defined-outside-init  |4           |
++--------------------------------+------------+
+|too-many-branches               |3           |
++--------------------------------+------------+
+|unnecessary-semicolon           |2           |
++--------------------------------+------------+
+|too-many-statements             |2           |
++--------------------------------+------------+
+|simplifiable-if-statement       |2           |
++--------------------------------+------------+
+|pointless-statement             |2           |
++--------------------------------+------------+
+|no-self-use                     |2           |
++--------------------------------+------------+
+|line-too-long                   |2           |
++--------------------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at -14.08/10 (previous run: -14.08/10, +0.00)
+
